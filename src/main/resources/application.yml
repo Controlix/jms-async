@@ -20,5 +20,12 @@ spring:
     #    broker-url: tcp://localhost:61616?jms.useAsyncSend=true
     user: admin
     password: superman
+  cloud:
+    discovery:
+      client:
+        simple:
+          instances:
+            rss-hungry-svc:
+              - uri: http://localhost:8094
 
 debug: true
