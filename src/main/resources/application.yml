@@ -1,0 +1,27 @@
+server:
+  port: 8120
+  servlet:
+    contextPath: /jms-async
+
+management:
+  endpoint:
+    health:
+      show-details: 'always'
+    gateway:
+      enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+
+spring:
+  artemis:
+    mode: native
+    #    broker-url: tcp://localhost:61616?jms.useAsyncSend=true
+    user: admin
+    password: superman
+#    pool:
+#      enabled: true
+#      max-connections: 20
+
+debug: true
