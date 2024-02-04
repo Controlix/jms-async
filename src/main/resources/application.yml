@@ -25,7 +25,9 @@ spring:
       client:
         simple:
           instances:
-            rss-hungry-svc:
-              - uri: http://localhost:8094
+            greetings:
+              - uri: http://localhost:8130
+            more-greetings:
+              - uri: http://localhost:8131
 
 debug: true
